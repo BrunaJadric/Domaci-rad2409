@@ -36,6 +36,7 @@ namespace Domaci_rad2409
             if (pismeni == 0)
             {
                 usmeni = 0;
+
             }
             else
             {

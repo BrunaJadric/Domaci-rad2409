@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Domaci_rad2409
 {
-    internal class Student : Osoba
+    public class Student : Osoba
     {
         public int godinastudija { get; set; }
         public string smjerstudiranja { get; set; }
-        public List<Ispit> lstIspit { get; set; }
+        public List<Ispit> lstIspit { get; set; }=new List<Ispit>();
 
         public Student()
         {
@@ -61,7 +61,7 @@ namespace Domaci_rad2409
             }
         }
 
-        public void BrojNepolozenih()
+        public int BrojNepolozenih()
         {
             int br=0;
             foreach (Ispit I in lstIspit)
@@ -69,7 +69,7 @@ namespace Domaci_rad2409
                 {
                     br++;
                 }
-            Console.WriteLine("Broj nepoloženih ispita je: {0} ", br);
+            return br;
         }
 
         public void ProsjekPolozenih()

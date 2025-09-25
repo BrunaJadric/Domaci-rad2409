@@ -5,7 +5,9 @@
         static void Main(string[] args)
         {
             List<Student> students = new List<Student>();
-         
+            Student s=new Student();
+            Admin.Unos(students);
+            Admin.Najlosiji(students);
         }
     }
 }
