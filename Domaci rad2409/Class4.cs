@@ -30,7 +30,7 @@ namespace Domaci_rad2409
                     min = student;
                 }
             }
-            min.IspisPodataka;
+            min.IspisPodataka();
 
         }
     }
